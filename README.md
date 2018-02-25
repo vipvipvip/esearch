@@ -2,11 +2,12 @@
 
 how to run this app:
 
+DOS command prompt:
+elasticsearch-6.1.3\bin\elasticsearch.bat
+
 Load Data: (this will load index for the books folder)
 esearch\node server/load_data.js
 
-DOS command prompt:
-elasticsearch-6.1.3\bin\elasticsearch.bat
 
 Git Bash:
 npm start in esearch
