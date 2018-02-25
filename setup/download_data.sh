@@ -1,10 +1,13 @@
 #!/bin/bash
-mkdir books
+if [[ ! -d "books" ]]; then
+    mkdir "books"
+fi
 while IFS='' read -r line || [[ -n "$line" ]]; do
-    #echo "Text read from file: $line"
-    #echo $line
-    #echo "$(echo $line | sed 's/ //g' | awk '{printf("%s", $0);}')"
-    curl -O  "$(echo $line | sed 's/ //g' | awk '{printf("%s", $0);}')"
+echo $line
+
+A=${line##*/}
+echo  "$(echo $line  | awk '{printf("%s", $0)}')"
+#curl -o ./books/$A "$(echo $line  | awk '{printf("%s", $0);}')"
 done < "download_links.txt"
 
 #mkdir books
