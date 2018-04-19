@@ -1,4 +1,6 @@
 how to run this app:
+ - install JRE
+ - npm install http-server -g
 
 Load Data: (this will load index for the books folder)
 esearch\node server/load_data.js
@@ -10,4 +12,4 @@ Git Bash:
 npm start in esearch
 
 From inside VS Code command prompt
-esearch\public\httpserver
+esearch\public\http-server
